@@ -1,0 +1,31 @@
+class Human{
+    int a = 10000;
+    void humanMethod(){
+        System.out.println("This is a Class");
+    }
+}
+
+class Student extends Human{
+    int b= 20000;
+   void studentMethod(){
+       System.out.println("This is Sub Class");
+   }
+    
+}
+class EngineeringStudent extends Student{
+    int c= 30000;
+    void estudent(){
+         System.out.println("This is sub class of Student");
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+	EngineeringStudent obj= new EngineeringStudent();
+	obj.humanMethod();
+	obj.studentMethod();
+	obj.estudent();
+	}
+}
