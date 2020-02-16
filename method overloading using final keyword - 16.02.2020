@@ -1,0 +1,22 @@
+package com.company;
+
+final class testFinal {
+
+
+    final void overload(int i) {
+        System.out.println(i);
+    }
+
+
+    void overload(int i, String s){
+        System.out.println(i + " is a integar "+"and "+ s+" is a String ");
+    }
+
+    public static void main(String[] args) {
+        testFinal obj = new testFinal();
+        obj.overload(10);
+        obj.overload(10,"Hello!");
+
+    }
+}
+
